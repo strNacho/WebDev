@@ -1,1 +1,8 @@
 /* Write your code here: */
+.box{
+    color: purple;
+}
+
+.box p{
+    color: aqua;
+}
