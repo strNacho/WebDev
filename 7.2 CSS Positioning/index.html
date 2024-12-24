@@ -5,10 +5,52 @@
   <title>CSS Positioning Exercise</title>
   <style>
     /* Write your code here */
+    body {
+      margin: 0;
+    }
+    .pink-box{
+      height: 200px;
+      width: 200px;
+      background-color: pink;
+      position: absolute;
+      left: 10px;
+      /* position: relative; */
+    }
+    .green-circle{
+      height: 100px;
+      width: 100px;
+      background-color: green;
+      /* 16번 줄 
+      있을 때(relative, absolute, fixed) 
+        : position property가 default가 아닌닌 조상들 중 가장 가까운 조상을 기준으로 절대 위치를 설정정
+      없을 때(static - default 값) 
+        : 뷰포트를 기준으로 위치를 잡음*/
+      position: absolute;
+      /* position: relative; */
+      top: 10px;
+      left: 10px;
+      border-radius: 100%;
+    }
+    #position-test{
+      height: 150px;
+      width: 150px;
+      background-color: aquamarine;
+      margin: 10px;
+      top: 10px;
+      /* position: absolute; */
+      /* position: relative; */
+
+    }
   </style>
 </head>
 
 <body>
+  <div class="pink-box">
+    <div id="position-test">
+      <div class="green-circle">
+      </div>
+    </div>
+  </div>  
   <div class="blue-box">
     <div class="red-circle">
     </div>
