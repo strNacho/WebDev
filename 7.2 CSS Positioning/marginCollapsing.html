@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Collapsing</title>
+    <style>
+    .parent {
+        margin-top: 20px;
+        height: 50px;
+        width: 50px;
+        background-color: pink;
+        padding: 10px;
+    }
+
+    .child {
+        margin-top: 0px;
+        height: 30px;
+        width: 30px;
+        background-color: purple;
+    }
+    .empty-box {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    }
+    .next-box {
+    background-color: pink;
+    }
+    </style>
+</head>
+<body>
+    <!-- <div class="parent">
+        <div class="child"></div>
+    </div> -->
+    <div class="empty-box"></div>
+    <div class="next-box">Hello</div>
+</body>
+</html>
