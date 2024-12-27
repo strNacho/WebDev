@@ -8,11 +8,16 @@
   <style>
     .flex-container {
       display: flex;
+      gap: 10px; /* 부모한테 세팅해야함 */
+      /* flex-direction: row; */ /* default 값 */
+      height: 100vh;
     }
 
     .card {
       background: blue;
-      border: 30px solid white;
+      /* border: 30px solid white; */
+      border: 3px solid yellowgreen;
+      /* height: 50%; */
       height: 100px;
       flex: 1;
     }
