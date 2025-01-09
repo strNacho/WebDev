@@ -7,6 +7,24 @@
     /* Write your code here */
     /* Each square should be 100px by 100px */
     /* My colours for white: #f0d9b5, black: #b58863 */
+    .container {
+      /* 너비를 주지 않으면 반응형 동작으로 가로를 맞추기 위한 gap이 생김*/
+      width: 800px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      /* grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px; */
+    }
+    .white {
+      background-color: #f0d9b5;
+      width: 100px;
+      height: 100px;
+    }
+    .black {
+      background-color: #b58863;
+      width: 100px;
+      height: 100px;
+    }
   </style>
 </head>
 
